@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+  },
+  "mypy-type-checker.args": [
+    "--disallow-untyped-defs"
+  ],
+  "python.analysis.extraPaths": [
+    "/usr/local/lib/python3.12/site-packages"
+  ],
+}

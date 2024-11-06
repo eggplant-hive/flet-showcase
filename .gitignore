@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+# Python
+__pycache__
+*.py[cod]
+# Flet
+.flet/
+*.flet
+
+app/logs
+env
+.env
+.mypy_cache
+.ruff_cache
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+*.db3

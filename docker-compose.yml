@@ -1,0 +1,9 @@
+services:
+  kanban-app:
+    build: .
+    ports:
+      - "8550:8550"
+    volumes:
+      - ./app:/app
+    environment:
+      - FLET_SERVER_PORT=8550

@@ -1,0 +1,25 @@
+{
+  "name": "kanban_flet",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "kanban-app",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode.remote-explorer",
+        "ms-azuretools.vscode-docker",
+        "ms-python.mypy-type-checker",
+        "ms-python.python",
+        "mtxr.sqltools",
+        "charliermarsh.ruff"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "forwardPorts": [8550],
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": "echo 'Welcome to your app in VSCode!'"
+}
